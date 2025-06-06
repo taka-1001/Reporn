@@ -21,6 +21,7 @@ export const useAuthStore = defineStore("auth", {
       this.isAuthenticated = false;
       this.user = null;
       localStorage.removeItem("auth");
+      return true;
     },
     restore() {
       const data = localStorage.getItem("auth");

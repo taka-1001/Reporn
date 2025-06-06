@@ -15,6 +15,7 @@ const handleLogin = () => {
   if (!error.value) {
     router.push("/");
   }
+  router.push("/report/list");
 };
 </script>
 
